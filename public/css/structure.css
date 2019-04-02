@@ -58,7 +58,7 @@ body {
     font-size:0.8em;
     text-align:center;
     height:150px;
-    background:url(/image/footer.jpg) no-repeat;
+
 }
 .baniere{float:left;
   margin-top:20px;
@@ -80,4 +80,22 @@ a  {
 
 .traitVertical {
   border-left: 1px white solid;
+}
+
+
+img{
+    height: 100px;
+}
+
+
+#listeVIP{
+    float: right;
+    margin-right: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#article{
+    border: 1px solid black;
+    width: 1000px;
 }
