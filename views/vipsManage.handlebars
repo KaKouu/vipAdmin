@@ -1,1 +1,93 @@
-<div>  vous êtes sur le fichier handlebars VipsManage </div>
+
+
+
+
+
+
+
+
+<div id="form_container">
+    <form id="form_58271" class="appnitro" enctype="multipart/form-data" method="post" action="">
+        <div class="form_description">
+            <h2>Ajout VIPs</h2>
+            <p></p>
+        </div>
+        <ul >
+
+            <li id="li_1" >
+                <label class="description" for="element_1">Nom : </label>
+                <span>
+			<input id="element_1_1" name= "element_1_1" class="element text" maxlength="255" size="8" value=""/>
+			<label>Nom</label>
+		</span>
+                <span>
+			<input id="element_1_2" name= "element_1_2" class="element text" maxlength="255" size="14" value=""/>
+			<label>Prénom</label>
+		</span>
+            </li>		<li id="li_5" >
+            <label class="description" for="element_5">Sexe : </label>
+            <div>
+                <select class="element select small" id="element_5" name="element_5">
+                    <option value="" selected="selected"></option>
+                    <option value="1" >Masculin</option>
+                    <option value="2" >Féminin</option>
+
+                </select>
+            </div>
+        </li>		<li id="li_2" >
+            <label class="description" for="element_2">Date de naissance : </label>
+            <span>
+			<input id="element_2_1" name="element_2_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_2_1">JJ</label>
+		</span>
+            <span>
+			<input id="element_2_2" name="element_2_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<label for="element_2_2">MM</label>
+		</span>
+            <span>
+	 		<input id="element_2_3" name="element_2_3" class="element text" size="4" maxlength="4" value="" type="text">
+			<label for="element_2_3">AAAA</label>
+		</span>
+
+            <script type="text/javascript">
+                Calendar.setup({
+                    inputField	 : "element_2_3",
+                    baseField    : "element_2",
+                    displayArea  : "calendar_2",
+                    button		 : "cal_img_2",
+                    ifFormat	 : "%B %e, %Y",
+                    onSelect	 : selectEuropeDate
+                });
+            </script>
+
+        </li>		<li id="li_6" >
+            <label class="description" for="element_6">Nationalité : </label>
+            <div>
+                <select class="element select medium" id="element_6" name="element_6">
+                    <option value="" selected="selected"></option>
+                    <option value="1" >First option</option>
+                    <option value="2" >Second option</option>
+                    <option value="3" >Third option</option>
+
+                </select>
+            </div>
+        </li>		<li id="li_3" >
+            <label class="description" for="element_3">Commentaire </label>
+            <div>
+                <textarea id="element_3" name="element_3" class="element textarea medium"></textarea>
+            </div>
+        </li>		<li id="li_4" >
+            <label class="description" for="element_4">Selectionner l'image : </label>
+            <div>
+                <input id="element_4" name="element_4" class="element file" type="file"/>
+            </div>
+        </li>
+
+            <li class="buttons">
+                <input type="hidden" name="form_id" value="58271" />
+
+                <input id="saveForm" class="button_text" type="submit" name="submit" value="Valider" />
+            </li>
+        </ul>
+    </form>
+</div>

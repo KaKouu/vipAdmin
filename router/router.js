@@ -7,14 +7,19 @@ let AlbumController = require('../controllers/AlbumController');
 
 
 
+var session = require('express-session');
 
 // Routes
 module.exports = function(app){
 
 
+
+
+
 // Main Routes
     app.get('/', HomeController.Index);
     app.get('/accueil', HomeController.Index);
+
 
 // VIP
     app.get('/repertoire', VipController.Repertoire);

@@ -1,2 +1,45 @@
 
-<div>  vous êtes sur le fichier handlebars Photo </div>
+<div id="form_container">
+    <form id="form_58271" class="appnitro" enctype="multipart/form-data" method="post" action="/photo">
+        <div class="form_description">
+            <h2>Ajout d'une photo</h2>
+            <p></p>
+        </div>
+        <ul >
+
+            <li id="li_7" >
+                <label class="description" for="element_7">Titre : </label>
+                <div>
+                    <input id="element_7" name="element_7" class="element text medium" type="text" maxlength="255" value=""/>
+                </div>
+            </li>		<li id="li_6" >
+            <label class="description" for="element_6">Nom du vip : </label>
+            <div>
+                <select class="element select medium" id="element_6" name="element_6">
+                    <option value="" selected="selected"></option>
+                    <option value="1" >First option</option>
+                    <option value="2" >Second option</option>
+                    <option value="3" >Third option</option>
+
+                </select>
+            </div>
+        </li>		<li id="li_3" >
+            <label class="description" for="element_3">Commentaire : </label>
+            <div>
+                <textarea id="element_3" name="element_3" class="element textarea small"></textarea>
+            </div>
+        </li>		<li id="li_4" >
+            <label class="description" for="element_4">Adresse de la photo : </label>
+            <div>
+                <input id="element_4" name="element_4" class="element file" type="file"/>
+            </div>
+        </li>
+
+            <li class="buttons">
+                <input type="hidden" name="form_id" value="58271" />
+
+                <input id="saveForm" class="button_text" type="submit" name="submit" value="Valider" />
+            </li>
+        </ul>
+    </form>
+</div>

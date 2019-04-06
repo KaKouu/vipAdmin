@@ -10,7 +10,7 @@
     "crypto": "*",
     "express": "^4.16.4",
     "express-handlebars": "*",
-    "express-session": ">1.12",
+    "express-session": "^1.15.6",
     "moment": "^2.24.0",
     "mysql": "2.16.0",
     "string": ">3.0",
