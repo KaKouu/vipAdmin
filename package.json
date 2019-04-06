@@ -11,13 +11,15 @@
     "express": "^4.16.4",
     "express-handlebars": "*",
     "express-session": "^1.15.6",
+    "is-empty": "^1.2.0",
+    "locutus": "^2.0.10",
     "moment": "^2.24.0",
     "mysql": "2.16.0",
     "string": ">3.0",
     "unidecode": "*"
   },
   "devDependencies": {
-    "nodemon": "*"
+    "nodemon": "^1.18.10"
   },
   "main": "app.js",
   "scripts": {
