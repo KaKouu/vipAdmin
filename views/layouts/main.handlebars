@@ -13,18 +13,29 @@
     <body class="monBody">
         <div id="container">
             <div id="header">
-                <div class="baniere"><img src="/images/sixvoix.png" alt="SIXVOIX l'encyclopédie des stars" /> </div>
-            </div>
-            <div class="menu_haut">
+                <div class="baniere"><img src="/images/sixvoix.png" alt="SIXVOIX l'encyclopédie des stars" />
+                {{#if session.estAuthentifie}}
 
-              <ul>
-                <li><a href="/home">ACCUEIL</a></li>
-                <li class="traitVertical"><a href="/repertoire">REPERTOIRE DES STARS</a></li>
-                <li class="traitVertical"><a href="/album">ALBUM PHOTO</a></li>
-                <li class="traitVertical"><a href="/vipsManage">VIPS</a></li>
-                <li class="traitVertical"><a href="/photo">PHOTOS</a></li>
-              </ul>
+                <form id="form_58271" class="appnitro" enctype="multipart/form-data" method="post" action="/home">
+                    <input class="button_text" type="submit" name="submit" value="Déconnexion" />
+                </form>
+                {{/if}}
+                </div>
             </div>
+
+            {{#if session.estAuthentifie}}
+                <div class="menu_haut">
+
+                    <ul>
+                        <li class="traitVertical"><a href="/repertoire" >REPERTOIRE DES STARS</a></li>
+                        <li class="traitVertical"><a href="/album" >ALBUM PHOTO</a></li>
+                        <li class="traitVertical"><a href="/vipsManage" >VIPS</a></li>
+                        <li class="traitVertical"><a href="/photo" >PHOTOS</a></li>
+                    </ul>
+                </div>
+
+            {{/if}}
+
             <div id="contenu">
                 <br/>
                 <br/>

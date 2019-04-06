@@ -68,6 +68,12 @@ body {
   border:none;
 }
 
+.baniere form {
+    float:right;
+    margin-top:20px;
+    margin-left:600px;
+}
+
 #LogoNode {
     max-height: 20%;
     max-width: 20%;

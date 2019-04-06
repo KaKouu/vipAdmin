@@ -16,12 +16,11 @@ let AlbumController = require('../controllers/AlbumController');
 module.exports = function(app){
 
     //SESSION
-    var express = require('express');
-    var session = require('express-session');
+
     var ssn ;
 
 
-    var empty = require('is-empty');
+   // var empty = require('is-empty');
 
 
 // Main Routes
