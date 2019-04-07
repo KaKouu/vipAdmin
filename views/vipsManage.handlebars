@@ -1,13 +1,8 @@
 
 
 
-
-
-
-
-
 <div id="form_container">
-    <form id="form_58271" class="appnitro" enctype="multipart/form-data" method="post" action="">
+    <form id="5" class="appnitro" enctype="multipart/form-data" method="post" action="vipsManage">
         <div class="form_description">
             <h2>Ajout VIPs</h2>
             <p></p>
@@ -17,35 +12,35 @@
             <li id="li_1" >
                 <label class="description" for="element_1">Nom : </label>
                 <span>
-			<input id="element_1_1" name= "element_1_1" class="element text" maxlength="255" size="8" value=""/>
+			<input id="nom" name="nom" class="element text" maxlength="255" type="text" maxlength="20" size="8" value=""/>
 			<label>Nom</label>
 		</span>
                 <span>
-			<input id="element_1_2" name= "element_1_2" class="element text" maxlength="255" size="14" value=""/>
+			<input id="prenom" name= "prenom" class="element text" maxlength="255" size="14" value=""/>
 			<label>Prénom</label>
 		</span>
             </li>		<li id="li_5" >
             <label class="description" for="element_5">Sexe : </label>
             <div>
-                <select class="element select small" id="element_5" name="element_5">
-                    <option value="" selected="selected"></option>
-                    <option value="1" >Masculin</option>
-                    <option value="2" >Féminin</option>
+                <select class="element select small" id="sexe" name="sexe">
+                    <option value="" selected="selected"> . . . </option>
+                    <option value="M" >Masculin</option>
+                    <option value="F" >Féminin</option>
 
                 </select>
             </div>
         </li>		<li id="li_2" >
             <label class="description" for="element_2">Date de naissance : </label>
             <span>
-			<input id="element_2_1" name="element_2_1" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<input id="jour" name="jour" class="element text" size="2" maxlength="2" value="" type="text"> /
 			<label for="element_2_1">JJ</label>
 		</span>
             <span>
-			<input id="element_2_2" name="element_2_2" class="element text" size="2" maxlength="2" value="" type="text"> /
+			<input id="mois" name="mois" class="element text" size="2" maxlength="2" value="" type="text"> /
 			<label for="element_2_2">MM</label>
 		</span>
             <span>
-	 		<input id="element_2_3" name="element_2_3" class="element text" size="4" maxlength="4" value="" type="text">
+	 		<input id="an" name="an" class="element text" size="4" maxlength="4" value="" type="text">
 			<label for="element_2_3">AAAA</label>
 		</span>
 
@@ -63,23 +58,23 @@
         </li>		<li id="li_6" >
             <label class="description" for="element_6">Nationalité : </label>
             <div>
-                <select class="element select medium" id="element_6" name="element_6">
-                    <option value="" selected="selected"></option>
-                    <option value="1" >First option</option>
-                    <option value="2" >Second option</option>
-                    <option value="3" >Third option</option>
 
+                <select class="element select medium" id="nationalité" name="nationalité">
+                    <option value="" selected="..."> . . . </option>
+                    {{#each allNationalite}}
+                    <option value="{{this.num}}" >{{this.nom}}</option>
+                    {{/each}}
                 </select>
             </div>
         </li>		<li id="li_3" >
             <label class="description" for="element_3">Commentaire </label>
             <div>
-                <textarea id="element_3" name="element_3" class="element textarea medium"></textarea>
+                <textarea id="commentaire" name="commentaire" class="element textarea medium"></textarea>
             </div>
         </li>		<li id="li_4" >
             <label class="description" for="element_4">Selectionner l'image : </label>
             <div>
-                <input id="element_4" name="element_4" class="element file" type="file"/>
+                <input id="file" name="file" class="element file" type="file"/>
             </div>
         </li>
 

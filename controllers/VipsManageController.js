@@ -3,13 +3,23 @@ let model = require("../models/admin.js");
 let async=require("async");
 
 
-module.exports.Form = function(request, response){
-    response.title = 'Répertoire des stars';
+module.exports.FormAjouter = function(request, response){
+    response.title = 'ajoutVips';
 
 
+    model.allNationalite(function(err, result){  // appel le module test qui exécute la requete SQL
+        if (err) {
+            console.log(err);
+            return;
+        }
 
-    response.render('vipsManage', response);
+        response.allNationalite = result;
+
+        response.render('vipsManage', response);
+
+    } )
 
 };
+
 
 
